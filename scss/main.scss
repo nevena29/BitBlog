@@ -1,0 +1,23 @@
+@import "navbar";
+
+*{
+  box-sizing: border-box
+}
+.wrapper{
+  width: 100%;
+}
+h2{
+  text-align:center;
+  margin:30px;
+}
+#copyright{
+  text-align: center;
+}
+hr{
+  display:block;
+    width:100%;
+    border-top:2px solid grey;
+    margin:20px 0;
+    padding:0;
+    
+};
