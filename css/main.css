@@ -4,7 +4,11 @@
 .wrapper {
   width: 100%; }
 
-h2 {
+.flex-container {
+  display: flex;
+  flex-direction: column; }
+
+h1 {
   text-align: center;
   margin: 30px; }
 
@@ -17,5 +21,18 @@ hr {
   border-top: 2px solid grey;
   margin: 20px 0;
   padding: 0; }
+
+.posts-div {
+  background-color: #0080ff;
+  margin: 15px auto;
+  padding: 30px;
+  color: whitesmoke;
+  width: 80%; }
+  .posts-div ul {
+    list-style-type: none; }
+  .posts-div a {
+    color: whitesmoke; }
+  .posts-div a:link {
+    text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */

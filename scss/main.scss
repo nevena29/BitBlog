@@ -1,4 +1,4 @@
-@import "navbar";
+
 
 *{
   box-sizing: border-box
@@ -6,7 +6,13 @@
 .wrapper{
   width: 100%;
 }
-h2{
+.flex-container{
+  display:flex;
+  flex-direction: column;
+  
+  
+}
+h1{
   text-align:center;
   margin:30px;
 }
@@ -20,4 +26,25 @@ hr{
     margin:20px 0;
     padding:0;
     
-};
+}
+.posts-div{
+  background-color:	#0080ff;
+  margin:15px auto;
+  padding:30px;
+  color:whitesmoke;
+  width:80%;
+
+  
+
+  ul{
+    list-style-type: none;
+  }
+    a{
+     color:whitesmoke;
+    }
+  a:link{
+     text-decoration: none;
+  }
+  
+}
+

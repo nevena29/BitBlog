@@ -12,7 +12,7 @@ fetch(url)
      const title = data[i]["title"];
      const body = data[i]["body"];
      container.append(`
-     <div class="posts-div">
+     <div class="posts-div ">
         <ul>
            <li>
            <h3><a href="singlePost.html">${title}</a> </h3>
