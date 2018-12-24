@@ -11,37 +11,34 @@ fetch(url)
  for(let i = 0; i< 10; i++){
      const title = data[i]["title"];
      const body = data[i]["body"];
+     const id = data[i]["id"];
      container.append(`
      <div class="posts-div ">
         <ul>
-           <li>
-           <h3><a href="singlePost.html">${title}</a> </h3>
-           <p>${body}</p>
-            </li>
+        <li>
+          <h3>
+          <a class=show_item show_id=`+ id + `  href="singlePost.html">${title}</a>  
+          </h3>
+          <p>${body}</p>
+         </li>
         </ul>
      </div>`)
 
+ //    <a class="id" ${id}   href="singlePost.html">${title}</a> 
 
-
-}
-    document.addEventListener('click', function (event) {
+    }
+         $(document).on("click","a",function(){
+         let value = $(this).attr("show_id");
+         console.log(value);
+         localStorage.setItem("myPost", value);
+         window.location.href = "singlePost.html"
     
-       
-        if (event.target.hasAttribute("id")) {
-            console.log(event.target.hasAttribute)
-        let idValue = event.target.getAttribute("id");
-        localStorage.setItem("id",idValue)
-        }
     });
+    
  
  })
 
-//  return posts.map(function(post){
-//     let li = createNode("li"),
-//         span = createNode("span");
-//     span.innerHTML = `{post.title}`
-//     append(li,span);
-//     append(ul,li)
+
 
 
 .catch(function(error){
