@@ -34,9 +34,9 @@ const url2 = "https://jsonplaceholder.typicode.com/posts?userId=" + idPost
             const listUsersId = authorsData[i].id
             if(singleId !== listUsersId){
             container.append(
-                `<div> 
-                   <h2><a href="#">${title}</a> </h2>
-                </div>`
+                `
+                   <h2><a class="singleTitles" href="#">${title}</a> </h2>
+                `
             )
         } 
         $(document).on("click","a",function(singleId){
