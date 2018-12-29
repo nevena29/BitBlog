@@ -137,15 +137,30 @@ a:link{
   font-size: 20px;
   width:80%;
 }
-.singleTitles{
-  text-align: center;
-}
+
 .footer{
  
-  // 
+  
   margin:auto auto 0 auto;
-  text-align: center;
-  // background-color: #0080ff;
+  
+  
+}
+.secondPageTitles{
+  padding-top:20px;
+  margin:0 auto;
+  font-size: 20px;
+    width:80%;
+    
+    a{
+      color:#0080ff;
+      font-size: 20px;
+    }
+  
+}
+span{
+  margin: 0 auto;
+  width:80%;
+  font-size: 30px;
 }
 
 

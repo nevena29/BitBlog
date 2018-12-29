@@ -16,13 +16,15 @@ fetch(url1)
              <h2>${title} </h2>
             <p> ${body} </p>
          
-         </div>`
+         </div>
+         <span>Post from same author: </span>`
      )
   
-fetchSameAuthorPosts(singleId);
-    
+     
+     
+     fetchSameAuthorPosts(singleId);
+    });
 
- });
 const url2 = "https://jsonplaceholder.typicode.com/posts?userId=" + idPost
   function fetchSameAuthorPosts(singleId){
     fetch(url2)
@@ -34,18 +36,22 @@ const url2 = "https://jsonplaceholder.typicode.com/posts?userId=" + idPost
             const listUsersId = authorsData[i].id
             if(singleId !== listUsersId){
             container.append(
-                `
-                   <h2><a class="singleTitles" href="#">${title}</a> </h2>
+                ` <div class = "secondPageTitles"
+                
+                   <h2><a  href=#>${title}</a> </h2>
+                   </div>
                 `
             )
         } 
-        $(document).on("click","a",function(singleId){
-          if(singleId!==listUsersId){
-
-          }
+        $(document).on("click","a",function(){
+          localStorage.getItem("myPost");
+          
+           
+          
         })
         }
 
 
   })
+ 
 }

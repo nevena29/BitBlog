@@ -101,11 +101,21 @@ a:link {
     font-weight: bold;
     margin: 0px; }
 
-.singleTitles {
-  text-align: center; }
-
 .footer {
-  margin: auto auto 0 auto;
-  text-align: center; }
+  margin: auto auto 0 auto; }
+
+.secondPageTitles {
+  padding-top: 20px;
+  margin: 0 auto;
+  font-size: 20px;
+  width: 80%; }
+  .secondPageTitles a {
+    color: #0080ff;
+    font-size: 20px; }
+
+span {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 30px; }
 
 /*# sourceMappingURL=main.css.map */
